@@ -1,0 +1,379 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Color Theme — Black Background & White Text */
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #cccccc;
+    --light-gray: #333333;
+    --accent: #00b3b3;
+    --input-bg: #2a2a2a;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: var(--black);
+    border-bottom: 1px solid var(--light-gray);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Shared Section Styling */
+section {
+    padding: 6rem 5%;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    color: var(--white);
+}
+
+/* Home / Hero Section */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    gap: 3rem;
+}
+
+.hero-content p:first-child {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.intro {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    color: var(--gray);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--white);
+}
+
+.primary-btn:hover {
+    background-color: var(--gray);
+    border-color: var(--gray);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.secondary-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.circle-frame {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    border: 3px solid var(--white);
+}
+
+/* About Section */
+.about-section {
+    background-color: #0a0a0a;
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+.about-section h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #111111;
+}
+
+.projects-section h2 {
+    text-align: center;
+}
+
+.projects-section h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projects-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--accent);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: var(--black);
+    padding: 2rem;
+    border: 1px solid var(--light-gray);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 179, 179, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.project-card p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.project-link {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--white);
+    border-bottom-color: var(--white);
+}
+
+/* Contact Section - NEW Two Column Layout */
+.contact-section {
+    background-color: #0a0a0a;
+    padding: 6rem 5%;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left - Contact Info */
+.contact-info h2 {
+    text-align: left;
+    color: var(--accent);
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+}
+
+.contact-info p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.contact-info p span {
+    font-size: 1.2rem;
+}
+
+/* Right - Contact Form */
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    margin-bottom: 1rem;
+    background-color: var(--input-bg);
+    border: none;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888888;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 1px solid var(--accent);
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #009999;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .circle-frame {
+        width: 250px;
+        height: 250px;
+    }
+
+    section {
+        padding: 4rem 5%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-info h2 {
+        text-align: center;
+        display: block;
+    }
+}
