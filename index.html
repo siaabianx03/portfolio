@@ -13,6 +13,7 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -23,15 +24,17 @@
         <div class="hero-content">
             <p>Hello, I'm</p>
             <h1>Sophia Bianca Licayan</h1>
-            <h2>Web Developer & Designer</h2>
+            <h2>Web Developer &amp; Designer</h2>
             <p class="intro">I build simple, clean websites and web applications. Passionate about learning and creating.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn primary-btn">Contact Me</a>
                 <a href="#projects" class="btn secondary-btn">View Work</a>
+                <a href="#resume" class="btn secondary-btn">View Resume</a>
             </div>
         </div>
         <div class="hero-image">
-            <div class="circle-frame"></div>
+            <!-- To use a photo: <div class="circle-frame"><img src="photo.jpg" alt="Sophia"></div> -->
+            <div class="circle-frame">SBL</div>
         </div>
     </section>
 
@@ -39,36 +42,118 @@
     <section id="about" class="about-section">
         <h2>About Me</h2>
         <div class="about-content">
-            <p>Hi! I'm Sophia Bianca Licayan, a student and aspiring web developer. I love creating clean, functional websites and learning new technologies. I work with HTML, CSS, JavaScript, and am currently exploring more about web development and design.</p>
+            <p>Hi! I'm Sophia Bianca Licayan, a student and aspiring BSIT graduate at Holy Cross of Davao College. I love gaming and learning new technologies. I work with HTML, CSS, and JavaScript, and I'm currently exploring more about web development and design.</p>
             <p>My goal is to build projects that are simple, user-friendly, and helpful. I believe in learning by doing and continuously improving my skills.</p>
+
+            <div class="about-facts">
+                <div class="fact"><h4>Location</h4><p>Davao City, Philippines</p></div>
+                <div class="fact"><h4>Studying</h4><p>BS Information Technology</p></div>
+                <div class="fact"><h4>Interests</h4><p>Gaming, web design, new tech</p></div>
+                <div class="fact"><h4>Status</h4><p>Open to internships</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <h2>My Resume</h2>
+        <p class="subtitle">A quick look at my education, skills, and experience</p>
+
+        <div class="resume-content">
+
+            <!-- Summary -->
+            <div class="resume-box resume-summary">
+                <div class="resume-icon"></div>
+                <h3>Profile Summary</h3>
+                <p>Motivated BSIT student with hands-on practice in front-end web development. Comfortable building responsive pages with HTML, CSS, and JavaScript, and eager to grow into full web applications. A fast learner who enjoys turning ideas into clean, usable interfaces.</p>
+            </div>
+
+            <!-- Education & Experience -->
+            <div class="resume-columns">
+                <div class="resume-box">
+                    <div class="resume-icon"></div>
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <h4>BS in Information Technology</h4>
+                        <p>Holy Cross of Davao College</p>
+                        <p class="meta">[Start year] – Present</p>
+                        <ul>
+                            <li>Coursework in programming, web development, and information systems</li>
+                            <li>Building portfolio projects to practice what I learn in class</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-box">
+                    <div class="resume-icon"></div>
+                    <h3>Experience</h3>
+                    <div class="resume-item">
+                        <h4>Personal &amp; Academic Web Projects</h4>
+                        <p>Self-directed &bull; Student</p>
+                        <p class="meta">[Year] – Present</p>
+                        <ul>
+                            <li>Designed and coded responsive websites with HTML, CSS, and JavaScript</li>
+                            <li>Published code on GitHub and practiced version control</li>
+                            <li>Built this portfolio from scratch</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+
+                <div class="resume-box">
+                    <div class="resume-icon"></div>
+                    <h3>Soft Skills &amp; Languages</h3>
+                    <p class="label">Soft Skills</p>
+                    <div class="tags">
+                        <span>Quick learner</span>
+                        <span>Problem solving</span>
+                        <span>Teamwork</span>
+                        <span>Attention to detail</span>
+                        <span>Time management</span>
+                    </div>
+
+                    <p class="label">Languages</p>
+                    <div class="tags">
+                        <span>English</span>
+                        <span>Filipino</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Put your resume PDF in the same folder and name it resume.pdf -->
+            <div class="resume-download">
+                <a href="resume.pdf" class="btn primary-btn" download>Download Resume (PDF)</a>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <h2>My Projects</h2>
-        <p class="projects-subtitle">Here are 3 of my recent works — click to visit them on GitHub</p>
-        
+        <p class="subtitle">Here are 3 of my recent works — click to visit them on GitHub</p>
+
         <div class="projects-grid">
-            <!-- Project 1 -->
             <div class="project-card">
                 <h3>Project One</h3>
-                <p>bla bla bla</p>
-                <a href="https://github.com/siaabianx03/project-1" target="_blank" class="project-link">View on GitHub →</a>
+                <p>A short description of what this project does. Replace this with your own summary.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span></div>
+                <a href="https://github.com/siaabianx03" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
             </div>
 
-            <!-- Project 2 -->
             <div class="project-card">
                 <h3>Project Two</h3>
-                <p>bla bla bla</p>
-                <a href="https://github.com/siaabianx03/project-2" target="_blank" class="project-link">View on GitHub →</a>
+                <p>A short description of what this project does. Replace this with your own summary.</p>
+                <div class="tags"><span>HTML</span><span>JavaScript</span></div>
+                <a href="https://github.com/siaabianx03" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
             </div>
 
-            <!-- Project 3 -->
             <div class="project-card">
                 <h3>Project Three</h3>
-                <p>bla bla bla</p>
-                <a href="https://github.com/siaabianx03/project-3" target="_blank" class="project-link">View on GitHub →</a>
+                <p>A short description of what this project does. Replace this with your own summary.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://github.com/siaabianx03" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
             </div>
         </div>
     </section>
@@ -76,15 +161,14 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="contact-container">
-            <!-- Left Side - Contact Info -->
             <div class="contact-info">
-                <h2>Contact Us</h2>
-                <p><span>📞</span> Phone: 09067709707</p>
-                <p><span>✉️</span> Email: sophiabianca.licayan@hcdc.edu.ph</p>
-                <p><span>📍</span> Location: Davao City</p>
+                <h2>Contact Me</h2>
+                <p>📞 Phone: 09067709707</p>
+                <p>✉️ Email: <a href="mailto:sophiabianca.licayan@hcdc.edu.ph">sophiabianca.licayan@hcdc.edu.ph</a></p>
+                <p>📍 Location: Davao City</p>
+                <p>💻 GitHub: <a href="https://github.com/siaabianx03" target="_blank" rel="noopener">github.com/siaabianx03</a></p>
             </div>
 
-            <!-- Right Side - Contact Form -->
             <div class="contact-form">
                 <h2>Get in Touch</h2>
                 <form action="#" method="POST">
@@ -97,6 +181,7 @@
             </div>
         </div>
     </section>
+
 
 </body>
 </html>
